@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import "./math.css"
+import './math.css';
 
 const MathTrainer = () => {
 	const [num1, setNum1] = useState(0);
@@ -8,7 +8,7 @@ const MathTrainer = () => {
 	const [score, setScore] = useState(0);
 	const [total, setTotal] = useState(0);
 	const [message, setMessage] = useState('');
-
+	
 	const inputRef = useRef(null);
 
 	const generateProblem = () => {
@@ -55,7 +55,6 @@ const MathTrainer = () => {
 	};
 
 	return (
-
 		<div className="math-trainer">
 			<div className="stats">
 				<h3>Статистика: {score} из {total}</h3>
@@ -82,9 +81,9 @@ const MathTrainer = () => {
 			</div>
 
 			<div className="controls">
-				<button onClick={checkAnswer}>Проверить</button>
-				<button onClick={generateProblem}>Пропустить</button>
-				<button onClick={() => { 
+				<button className="answer" onClick={checkAnswer}>Проверить</button>
+				<button className="skip" onClick={generateProblem}>Пропустить</button>
+				<button className="again" onClick={() => { 
 					setScore(0); 
 					setTotal(0); 
 					generateProblem(); 
@@ -92,7 +91,6 @@ const MathTrainer = () => {
 					Начать заново
 				</button>
 			</div>
-
 
 			{message && (
 				<div className={`message ${message.includes('Правильно') ? 'correct' : 'incorrect'}`}>
