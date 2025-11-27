@@ -35,7 +35,7 @@ npm run dev
 ---
 
 ### Вид программы при верном ответе
-![correct](./correct.png)
+![correct](./assets/correct.)
 
 ---
 
