@@ -1,4 +1,4 @@
-![Превью math-trainer](./math-trainer.png)
+![Превью math-trainer](./src//assets/math-trainer.png)
 # 🧮 Математический тренажёр
 
 ---
@@ -26,7 +26,7 @@ npm run dev
 ## 🎥 Демонстрация
 
 ### Примерный сценарий использования
-![Demonstration of the work](./gif-math-trainer.gif)
+![Demonstration of the work](./src//assets/gif-math-trainer.gif)
 
 ---
 
@@ -35,12 +35,12 @@ npm run dev
 ---
 
 ### Вид программы при верном ответе
-![correct](./assets/correct.)
+![correct](./src//assets/correct.png)
 
 ---
 
 ### Вид программы при не верном ответе
-![incorrect](./incorrect.png)
+![incorrect](./src//assets/incorrect.png)
 
 ---
 
